@@ -8,7 +8,6 @@ Brief description of the plugin.
   <resources>
     <resource>DataSource</resource>
     <resource>UrlMappings</resource>
-    <resource>MehController</resource>
   </resources>
   <dependencies />
 </plugin>
