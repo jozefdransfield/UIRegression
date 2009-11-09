@@ -15,7 +15,31 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="" />
+    <list default="true" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/alltests-fails.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/plain/TEST-samples.SampleUIRegressionTests-out.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/overview-frame.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.iws" afterPath="$PROJECT_DIR$/UIRegression.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/TEST-samples.SampleUIRegressionTests.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/plain/TEST-samples.SampleUIRegressionTests-err.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/all-tests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/samples/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/alltests-errors.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/plain/TEST-samples.SampleUIRegressionTests.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.settings/org.codehaus.groovy.eclipse.preferences.prefs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/samples/0_SampleUIRegressionTests-errors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/samples/0_SampleUIRegressionTests.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.ipr" afterPath="$PROJECT_DIR$/UIRegression.ipr" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/samples/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/samples/0_SampleUIRegressionTests-out.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/samples/0_SampleUIRegressionTests-err.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/reports/html/overview-summary.html" afterPath="" />
+    </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="UIRegression.iws" />
   </component>
@@ -73,28 +97,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestUiRegression.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/TestUiRegression.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Events.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="51" selection-start="982" selection-end="982" vertical-scroll-proportion="0.41509435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIRegressionTestRunner.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UIRegressionTestRunner.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/net/jozefdransfield/uiregression/UIRegressionTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="65" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
+            <state line="48" column="30" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.32232705">
               <folding />
             </state>
           </provider>
@@ -497,11 +503,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="22" width="1900" height="1124" extended-state="0" />
-    <editor active="false" />
+    <frame x="9" y="22" width="1900" height="1124" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" />
@@ -515,7 +521,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.66333663" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.66333663" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
@@ -624,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/TestUiRegression.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/net/jozefdransfield/uiregression/UIRegressionFormattedOutput.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="64" selection-start="147" selection-end="162" vertical-scroll-proportion="0.0">
@@ -645,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/net/jozefdransfield/uiregression/UIRegressionTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="65" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ui-regression-test/samples/SampleUIRegressionTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
@@ -661,7 +653,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="51" selection-start="982" selection-end="982" vertical-scroll-proportion="0.41509435">
+        <state line="40" column="0" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.77795786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/TestUiRegression.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/net/jozefdransfield/uiregression/UIRegressionTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="30" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.32232705">
           <folding />
         </state>
       </provider>
