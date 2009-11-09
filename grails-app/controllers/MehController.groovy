@@ -1,0 +1,4 @@
+class MehController {
+
+    def index = { }
+}
