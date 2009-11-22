@@ -5,19 +5,16 @@ import net.jozefdransfield.uiregression.UIRegressionTestCase
 class SampleUIRegressionTests extends UIRegressionTestCase {
 
   public void setUp() throws Exception {
-    //super.setUp("https://skyid.sky.com", "*firefox");
+    super.setUp("https://alpha.happy-path.com", "*firefox");
   }
+  
+  public void testSample() throws Exception {
 
-  protected void tearDown() {
-    super.tearDown()
-  }
-
-  public void testUntitled() throws Exception {
-    navigateTo {
-//      selenium.open("/signin");
-
-      println("DOUBLE AWESOME")
+    navigateToAssertScreenShot("testSample") {
+       selenium.open("/")  
     }
+
+    
 
   }
 

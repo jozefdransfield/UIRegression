@@ -1,5 +1,3 @@
-import net.jozefdransfield.uiregression.UIRegressionTestRunner
-
 def webtestAnt = new AntBuilder()
 
 eventAllTestsStart = {
@@ -8,10 +6,10 @@ eventAllTestsStart = {
   }
 }
 
-eventTestPhaseStart = {phase ->
+eventTestPhaseStart = { phase ->
   if (phase == 'functional') {
     event("StatusUpdate", ['Starting Selenium RC'])
-    Ant.java(jar:'selenium/selenium-server-1.0.1/selenium-server.jar', fork:true, spawn: true)
+    Ant.java(jar:'selenium/selenium-server-1.0.1/selenium-server-1.0.2-SNAPSHOT-standalone.jar', fork:true, spawn: true)
 
     //testRunner = new UIRegressionTestRunner(testReportsDir, reportFormats)
   }
@@ -29,7 +27,7 @@ eventTestPhaseStart = {phase ->
 //    }
 //}
 
-eventTestPhaseEnd = {phase ->
+eventTestPhaseEnd = { phase ->
   if (phase == 'functional') {
     event("StatusUpdate", ['Stopping Selenium RC'])
     URL url = new URL("http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer")

@@ -29,7 +29,9 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$USER_HOME$/.grails/1.1.1/projects/UIRegression/plugins" />
+    <content url="file://$USER_HOME$/.grails/1.2-M4/projects/UIRegression/plugins">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.2-M4/projects/UIRegression/plugins/tomcat-1.2-M4/src/groovy" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/grails-app/conf/hibernate" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/grails-app/controllers" isTestSource="false" />
@@ -44,14 +46,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="grails-1.1.1" level="application" />
+    <orderEntry type="library" name="Grails 1.2-M4" level="project" />
     <orderEntry type="module-library">
       <library name="Grails User Library">
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
+          <root url="file://$USER_HOME$/.grails/1.2-M4/projects/UIRegression/plugins/tomcat-1.2-M4/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.2-M4/projects/UIRegression/plugins/tomcat-1.2-M4/lib" recursive="false" />
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
