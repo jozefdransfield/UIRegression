@@ -1,5 +1,3 @@
-def webtestAnt = new AntBuilder()
-
 eventAllTestsStart = {
   if (getBinding().variables.containsKey("functionalTests")) {
     functionalTests << "ui-regression-test"
@@ -9,23 +7,9 @@ eventAllTestsStart = {
 eventTestPhaseStart = { phase ->
   if (phase == 'functional') {
     event("StatusUpdate", ['Starting Selenium RC'])
-    Ant.java(jar:'selenium/selenium-server-1.0.1/selenium-server-1.0.2-SNAPSHOT-standalone.jar', fork:true, spawn: true)
-
-    //testRunner = new UIRegressionTestRunner(testReportsDir, reportFormats)
+    Ant.java(jar:'selenium/selenium-server-1.0.2-SNAPSHOT-standalone.jar', fork:true, spawn: true)
   }
 }
-
-//eventTestSuiteStart = {type ->
-//  if (type == "ui-regression-test") {
-//    println "----------------------------------------------- Smello fellow"
-//  }
-//}
-//
-//eventTestSuiteEnd = {type, suite ->
-//    if (type == "ui-regression-test") {
-//        println "---------------------------------------------- ${suite.class}"
-//    }
-//}
 
 eventTestPhaseEnd = { phase ->
   if (phase == 'functional') {

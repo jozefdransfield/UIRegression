@@ -4,6 +4,8 @@ import org.gmock.GMockTestCase
 import com.thoughtworks.selenium.Selenium
 import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
+import grails.util.BuildSettings
+import grails.util.BuildSettingsHolder
 
 public class UIRegressionTestCaseTests extends GMockTestCase {
 
@@ -14,6 +16,12 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     uiRegressionTestCase = new UIRegressionTestCase()
     selenium = mock(Selenium)
     uiRegressionTestCase.selenium = selenium
+
+    def buildSettings = new BuildSettings()
+    BuildSettingsHolder.settings = buildSettings
+
+    buildSettings.config.uiregression.reference.path = "/path/to/reference"
+    buildSettings.config.uiregression.result.path = "/path/to/result"
   }
 
   void testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual() {
@@ -22,13 +30,13 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     ordered {
       partialUIRegressionTestCase.initialiseReportDirectory("screen_id")
       mockClosure.call()
-      selenium.captureEntirePageScreenshot("/Users/jozefdransfield/Desktop/screen_id/result.png", "")
+      selenium.captureEntirePageScreenshot("/path/to/result/screen_id/result.png", "")
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(false)
+      partialUIRegressionTestCase.static.fail("I failed")
     }
     play {
-      shouldFail(IllegalArgumentException) {
         uiRegressionTestCase.navigateToAssertScreenShot("screen_id", mockClosure)
-      }
+      
     }
   }
 
@@ -38,7 +46,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     ordered {
       partialUIRegressionTestCase.initialiseReportDirectory("screen_id")
       mockClosure.call()
-      selenium.captureEntirePageScreenshot("/Users/jozefdransfield/Desktop/screen_id/result.png", "")
+      selenium.captureEntirePageScreenshot("/path/to/result/screen_id/result.png", "")
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(true)
     }
     play {
@@ -76,9 +84,13 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
 
   void testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist() {
     ordered {
-      def mockReportsDirectory = mock(File, constructor("/Users/jozefdransfield/Desktop/filename"))
-      mockReportsDirectory.exists().returns(false)
-      mockReportsDirectory.mkdir()
+      def mockReferenceDirectory = mock(File, constructor("/path/to/reference/filename/"))
+      mockReferenceDirectory.exists().returns(false)
+      mockReferenceDirectory.mkdir()
+      
+      def mockResultDirectory = mock(File, constructor("/path/to/result/filename/"))
+      mockResultDirectory.exists().returns(false)
+      mockResultDirectory.mkdir()
     }
     play {
       uiRegressionTestCase.initialiseReportDirectory("filename")
@@ -87,8 +99,11 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
 
   void testInitialiseReportDirectoryDoesNothingIfExists() {
     ordered {
-      def mockReportsDirectory = mock(File, constructor("/Users/jozefdransfield/Desktop/filename"))
-      mockReportsDirectory.exists().returns(true)
+      def mockReferenceDirectory = mock(File, constructor("/path/to/reference/filename/"))
+      mockReferenceDirectory.exists().returns(true)
+
+      def mockResultDirectory = mock(File, constructor("/path/to/result/filename/"))
+      mockResultDirectory.exists().returns(true)
     }
     play {
       uiRegressionTestCase.initialiseReportDirectory("filename")
@@ -98,7 +113,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
   void testloadReferenceFileReturnsReferenceFile() {
     def mockFile
     ordered {
-      mockFile = mock(File, constructor("/Users/jozefdransfield/Desktop/screen_id/reference.png"))
+      mockFile = mock(File, constructor("/path/to/reference/screen_id/reference.png"))
     }
     play {
       assertEquals mockFile, uiRegressionTestCase.loadReferenceFile("screen_id")
@@ -108,7 +123,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
   void testLoadResultFileReturnsResultFile() {
     def mockFile
     ordered {
-      mockFile = mock(File, constructor("/Users/jozefdransfield/Desktop/screen_id/result.png"))
+      mockFile = mock(File, constructor("/path/to/result/screen_id/result.png"))
     }
     play {
       assertEquals mockFile, uiRegressionTestCase.loadResultFile("screen_id")
