@@ -12,7 +12,8 @@ class uiregressionGrailsPlugin {
     def authorEmail = "Jozef.Dransfield@me.com"
     def title = "Plugin summary/headline"
     def description = '''\\
-Brief description of the plugin.
+UIRegression plugin adds a new type of functional test, which uses selenium to navigate to a page and screenshot it.
+This screenshot is compared with a previous reference screenshot, to test for ui regressions.
 '''
     def documentation = "http://grails.org/UIRegression+Plugin"
 }
