@@ -13,6 +13,7 @@ Brief description of the plugin.
     <resource>UrlMappings</resource>
   </resources>
   <dependencies>
+    <plugin name='seleniumRc' version='0.1.1 &gt; *' />
     <resolvers>
       <resolver type='mavenCentral' />
     </resolvers>

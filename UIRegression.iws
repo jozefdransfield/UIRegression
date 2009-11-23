@@ -16,17 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" afterPath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stacktrace.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests-fails.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests-fails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uiregressionGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/uiregressionGrailsPlugin.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.iws" afterPath="$PROJECT_DIR$/UIRegression.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.txt" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.xml" afterPath="$PROJECT_DIR$/target/test-reports/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" afterPath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/all-tests.html" afterPath="$PROJECT_DIR$/target/test-reports/html/all-tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/overview-summary.html" afterPath="$PROJECT_DIR$/target/test-reports/html/overview-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/package-summary.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Events.groovy" afterPath="$PROJECT_DIR$/scripts/_Events.groovy" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="UIRegression.iws" />
@@ -86,44 +79,7 @@
     <favorites_list name="UIRegression" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="uiregressionGrailsPlugin.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/uiregressionGrailsPlugin.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="543" selection-end="543" vertical-scroll-proportion="0.3207547">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIRegression.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UIRegression.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Events.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="26" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -156,6 +112,10 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="UIRegression" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -228,6 +188,16 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="conf" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="UIRegression" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="UIRegression" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
     </subPane>
@@ -678,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/selenium-java-client-driver.jar!/com/thoughtworks/selenium/SeleneseTestCase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="163" selection-end="179" vertical-scroll-proportion="0.0754717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Applications/Development/grails/grails-1.2-M4/dist/grails-web-1.2-M4.jar!/grails/util/BuildSettingsHolder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -720,16 +683,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UIRegression.iml">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/SeleniumConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="93" selection-start="796" selection-end="796" vertical-scroll-proportion="0.20754717">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+        <state line="20" column="39" selection-start="653" selection-end="653" vertical-scroll-proportion="0.3773585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRegression.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -741,16 +711,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/SeleniumConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="93" selection-start="796" selection-end="796" vertical-scroll-proportion="0.20754717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uiregressionGrailsPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="543" selection-end="543" vertical-scroll-proportion="0.3207547">
+        <state line="18" column="0" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
