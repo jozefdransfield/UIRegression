@@ -22,7 +22,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     selenium.captureEntirePageScreenshot(resultImagePath(screenShotName), "")
 
     if (!loadScreenShotsAndCompare(screenShotName)) {
-      fail("I failed")
+      fail("Reference Image at [${resultImagePath(screenShotName)}] did not match [${referenceImagePath(screenShotName)}] for ID: [${screenShotName}]")
     }
   }
 

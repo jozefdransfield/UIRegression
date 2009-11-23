@@ -46,7 +46,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       mockClosure.call()
       selenium.captureEntirePageScreenshot("/path/to/result/screen_id/result.png", "")
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(false)
-      partialUIRegressionTestCase.static.fail("I failed")
+      partialUIRegressionTestCase.static.fail("Reference Image at [/path/to/result/screen_id/result.png] did not match [/path/to/reference/screen_id/reference.png] for ID: [screen_id]")
     }
     play {
         uiRegressionTestCase.navigateToAssertScreenShot("screen_id", mockClosure)
