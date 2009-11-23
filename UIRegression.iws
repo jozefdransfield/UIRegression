@@ -16,302 +16,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/CommandQueueAware.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/CaptureNetworkTrafficCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/ResourceExtractor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/cli/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/BrowserSessionFactory.BrowserSessionInfo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/ResourceLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/SeleniumServer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/FrameAddress.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/ProxyInjectionSafariCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/MaxLevelFilter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/ProxyInjectionSafariCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/CaptureScreenshotCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/UnixUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/CaptureNetworkTrafficCommand.Entry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/InjectionHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/RobotRetriever.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/BrowserSessionFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/FirefoxChromeLauncher.FileLockRemainedException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/FirefoxCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/ProxyInjectionInternetExplorerCustomProxyLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/FirefoxChromeLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/BrowserStringParser.Result.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/ModifiedIO.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/HTMLLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/AbstractBrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/AsyncExecute.ProcessStillAliveException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/class-use/AntJettyLoggerBuildListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/SafariLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/AntJettyLoggerBuildListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/InvalidBrowserExecutableException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/FirefoxChromeLauncher.FileLockRemainedException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/selenium-server-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/DefaultRemoteCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/TerseFormatter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/FsResourceLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/BrowserResponseSequencer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/FrameGroupCommandQueueSet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ant/class-use/SeleneseAntTask.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/RemoteControlConfiguration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/BrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ant/SeleneseAntTask.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/FrameGroupCommandQueueSet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/BrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/AsyncExecute.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/InternetExplorerCustomProxyLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/ApplicationRegistry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/WindowsUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ClasspathResourceLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/options" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/Firefox3Launcher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/AddCustomRequestHeaderCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/BrowserSessionFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/IOHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/MockBrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/HTMLSuiteResult.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/CommandQueue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/FirefoxCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/ClasspathResourceLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/BrowserInstallation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/Firefox2Launcher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ant/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/CertificateCreator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/cli/RemoteControlLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/SafariLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/class-use/HTMLSuiteResult.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/CaptureNetworkTrafficCommand.Header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/Firefox2Launcher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ant/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/CommandResultHolder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/InjectionHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/AsyncExecute.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/RemoteCommandException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/Command.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/Firefox3Launcher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/MockBrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/SpecialCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/class-use/HTMLLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/WindowClosedException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/SingleEntryAsyncQueue.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/net/jozefdransfield/uiregression/UIRegressionTestCaseTests.groovy" afterPath="$PROJECT_DIR$/test/unit/net/jozefdransfield/uiregression/UIRegressionTestCaseTests.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/SeleniumCoreCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/SafariCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/BrowserSessionFactory.CleanupTask.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/SystemUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/BrowserInstallationCache.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/FutureFileResource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/WindowsProxyManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/cli/class-use/RemoteControlLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/LauncherUtils.ProxySetting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/class-use/KeyStoreManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/CaptureScreenshotToStringCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/CaptureNetworkTrafficCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/class-use/SingleTestSuiteResourceHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/InternetExplorerLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/LauncherUtils.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/selenium-server-1.0.2-SNAPSHOT-standalone.jar" afterPath="$PROJECT_DIR$/selenium/selenium-server-1.0.2-SNAPSHOT-standalone.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/SeleniumServer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/BrowserConfigurationOptions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/UnixUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/SafariCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/CaptureEntirePageScreenshotToStringCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/ResourceExtractor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/KonquerorLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/HTABrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/packages" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/CommandQueue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/ProxyInjectionInternetExplorerCustomProxyLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/SafariLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/BrowserInstallationCache.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/CommandHolder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/testgenerator/class-use/XlateHtmlSeleneseToJava.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/InvalidBrowserExecutableException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/ThumbprintUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/BrowserLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/FirefoxLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/DefaultRemoteCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/SeleniumCommandTimedOutException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ResourceLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/Firefox2or3Locator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/testgenerator/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/BrowserSessionFactory.CleanupTask.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/KonquerorLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/class-use/CertificateCreator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/HTMLTestResults.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/InternetExplorerLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/class-use/MaxLevelFilter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/OperaCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/class-use/TerseFormatter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/selenium-server-coreless.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/ShortTermMemoryHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/StdOutHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/class-use/HTMLTestResults.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/AsyncExecute.ProcessStillAliveException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/SingleBrowserLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/InternetExplorerLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/CaptureNetworkTrafficCommand.Header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/FirefoxCustomProfileLauncher.FileLockRemainedException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/testgenerator/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/GoogleChromeLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/CachedContentTestHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/SpecialCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/CaptureScreenshotCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/SingleTestSuiteResourceHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/SeleniumCommandTimedOutException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/AbstractBrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/sslSupport/cybervillainsCA.cer" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/class-use/StdOutHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/OperaCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/LauncherUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/cli/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/ProxyInjectionFirefoxCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/HTMLResultsListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/TrustEverythingSSLTrustManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/FirefoxChromeLauncher.ChromeUrlConvert.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/IOHelper.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/all-tests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uiregressionGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/uiregressionGrailsPlugin.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.iws" afterPath="$PROJECT_DIR$/UIRegression.iws" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ant/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/class-use/ShortTermMemoryHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/KeyStoreManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/resources/inherit.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/HtmlIdentifier.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/overview-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/SeleniumCoreCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/CachedContentTestHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/Firefox2Locator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/MacProxyManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/serialized-form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/RemoteCommandException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ApplicationRegistry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/RobotRetriever.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/FirefoxChromeLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/BrowserResponseSequencer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/LauncherUtils.ProxySetting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/RemoteCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/GoogleChromeLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/BrowserStringParser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/package-summary.html" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/MacProxyManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/TrustEverythingSSLTrustManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/BrowserLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ProxyHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/LoggingManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/BrowserConfigurationOptions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/CaptureScreenshotToStringCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/HtmlIdentifier.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/InternetExplorerLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/SafariFileBasedLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/AddCustomRequestHeaderCommand.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ui-regression-test/samples/SampleUIRegressionTests.groovy" afterPath="$PROJECT_DIR$/test/ui-regression-test/samples/SampleUIRegressionTests.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ModifiedIO.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/SystemUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/FirefoxCustomProfileLauncher.FileLockRemainedException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/SafariLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ant/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/FirefoxLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/CaptureEntirePageScreenshotToStringCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/cli/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/BrowserInstallation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/CommandQueueAware.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/DestroyableRuntimeExecutingBrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/SeleniumHTMLRunnerResultsHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/ProxyHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/SingleBrowserLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/Firefox3Locator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/package-use.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/overview-frame.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/ui-regression-test/samples/SampleUIRegressionTests.groovy" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/net/jozefdransfield/uiregression/UIRegressionTestCase.groovy" afterPath="$PROJECT_DIR$/src/groovy/net/jozefdransfield/uiregression/UIRegressionTestCase.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/GoogleChromeLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/class-use/LoggingManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/StaticContentHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/BrowserStringParser.Result.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/CommandHolder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/cli/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/DestroyableRuntimeExecutingBrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/Firefox3Locator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/SafariFileBasedLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/HTABrowserLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/selenium-server-test-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/WindowClosedException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/FirefoxLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/StaticContentHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/ClassPathResource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/Firefox2Locator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/Command.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/CommandResultHolder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/SingleEntryAsyncQueue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/class-use/GoogleChromeLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/testgenerator/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/SeleniumDriverResourceHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/RemoteControlConfiguration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/CaptureNetworkTrafficCommand.Entry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/FrameAddress.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/class-use/HTMLResultsListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/testgenerator/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/FutureFileResource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/FsResourceLocator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/FirefoxLocator.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Events.groovy" afterPath="$PROJECT_DIR$/scripts/_Events.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/RemoteCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/class-use/SeleniumHTMLRunnerResultsHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/locators/Firefox2or3Locator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/BrowserLauncherFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/BrowserLauncherFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/ProxyInjectionFirefoxCustomProfileLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/InternetExplorerCustomProxyLauncher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/testgenerator/XlateHtmlSeleneseToJava.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/WindowsUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/class-use/RetrieveLastRemoteControlLogsCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/WindowsProxyManager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/overview-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/class-use/BrowserStringParser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/selenium-server.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/BrowserSessionFactory.BrowserSessionInfo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/ClassPathResource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/browserlaunchers/FirefoxChromeLauncher.ChromeUrlConvert.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/RetrieveLastRemoteControlLogsCommand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/class-use/SeleniumDriverResourceHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/selenium-server-tests.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/htmlrunner/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/cybervillains/ca/class-use/ThumbprintUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/log/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/selenium-server-1.0.1/javadoc/org/openqa/selenium/server/commands/package-frame.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests-err.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests-out.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/alltests-errors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/html/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-reports/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="UIRegression.iws" />
@@ -371,53 +97,7 @@
     <favorites_list name="UIRegression" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UIRegressionTestCase.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/net/jozefdransfield/uiregression/UIRegressionTestCase.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.056603774">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Events.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SampleUIRegressionTests.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ui-regression-test/samples/SampleUIRegressionTests.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIRegressionTestCaseTests.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/net/jozefdransfield/uiregression/UIRegressionTestCaseTests.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="48" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -562,7 +242,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
+          <option name="myItemId" value="uiregression" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -576,25 +256,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="web-app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
+          <option name="myItemId" value="uiregression" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -620,99 +282,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ui-regression-test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="samples" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="groovy" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
           <option name="myItemId" value="uiregression" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
-      </PATH>
-      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="selenium" />
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -726,25 +300,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="scripts" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
+          <option name="myItemId" value="uiregression" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -762,7 +318,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="UIRegression" />
+          <option name="myItemId" value="uiregression" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -1014,7 +570,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="22" width="1900" height="1124" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" />
@@ -1026,7 +582,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
@@ -1035,7 +591,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
@@ -1050,7 +606,7 @@
     <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="UIRegression test now actually compares images." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored UIRegression to uiregression" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1062,6 +618,8 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="UIRegression test now actually compares images." />
+    <MESSAGE value="Removed Selenium Clutter, UIRegressionTestCase now fully tests screenshot" />
+    <MESSAGE value="Refactored UIRegression to uiregression" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1109,13 +667,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIDEA8x/compiler/uiregression.UIRegressionc4cd02a5/.generated/Groovy_to_java_source_code_generator/UIRegression.c4cd0242/test/samples/SampleUIRegressionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/net/jozefdransfield/uiregression/ImageUtils.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="26" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
@@ -1139,35 +690,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ui-regression-test/samples/SampleUIRegressionTests.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/net/jozefdransfield/uiregression/UIRegressionTestCaseTests.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="48" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+        <state line="10" column="61" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/net/jozefdransfield/uiregression/UIRegressionTestCase.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+        <state line="29" column="4" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uiregressionGrailsPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="224" selection-end="224" vertical-scroll-proportion="0.094339624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.11320755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/net/jozefdransfield/uiregression/UIRegressionTestCaseTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="39" selection-start="808" selection-end="808" vertical-scroll-proportion="0.33962265">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.056603774">
+        <state line="1" column="29" selection-start="72" selection-end="72" vertical-scroll-proportion="0.018867925">
           <folding />
         </state>
       </provider>

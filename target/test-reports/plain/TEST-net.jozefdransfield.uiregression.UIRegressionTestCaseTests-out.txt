@@ -1,0 +1,11 @@
+--Output from testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual--
+--Output from testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual--
+--Output from testLoadScreenShotsAndCompareReturnsTrueIfImagesAreEqual--
+--Output from testLoadScreenShotsAndCompareReturnsFalseIfImagesAreNotEqual--
+--Output from testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty--
+--Output from testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist--
+--Output from testInitialiseReportDirectoryDoesNothingIfExists--
+--Output from testloadReferenceFileReturnsReferenceFile--
+--Output from testLoadResultFileReturnsResultFile--
+--Output from testCompareResultToReferenceReturnsFalseIfImagesNotEqual--
+--Output from testCompareResultToReferenceReturnsTrueIfImagesEqual--

@@ -1,13 +1,18 @@
-<plugin name='uir-egression' version='0.1' grailsVersion='1.1.1 &gt; *'>
-  <author>Your name</author>
+<plugin name='uiregression' version='0.1' grailsVersion='1.1.1 &gt; *'>
+  <author>Jozef Dransfield</author>
+  <authorEmail>Jozef.Dransfield@me.com</authorEmail>
   <title>Plugin summary/headline</title>
   <description>\
 Brief description of the plugin.
 </description>
   <documentation>http://grails.org/UIRegression+Plugin</documentation>
   <resources>
+    <resource>BuildConfig</resource>
     <resource>DataSource</resource>
     <resource>UrlMappings</resource>
   </resources>
-  <dependencies />
+  <dependencies>
+    <resolvers />
+  </dependencies>
+  <behavior />
 </plugin>

@@ -22,6 +22,9 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
 
     buildSettings.config.uiregression.reference.path = "/path/to/reference"
     buildSettings.config.uiregression.result.path = "/path/to/result"
+    buildSettings.config.uiregression.selenium.host = "localhost"
+    buildSettings.config.uiregression.selenium.port = 4444
+
   }
 
   void testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual() {
@@ -79,6 +82,20 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     }
     play {
       assertFalse uiRegressionTestCase.loadScreenShotsAndCompare("screen_id")
+    }
+  }
+
+  void testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty() {
+    System.setProperty("uiregression.regenerate", "true")
+    def partialUIRegressionTestCase = mock(uiRegressionTestCase)
+    def mockResultFile = mock(File)
+    def mockReferenceFile = mock(File)
+    ordered {
+      partialUIRegressionTestCase.loadResultFile("screen_id").returns(mockResultFile)
+      partialUIRegressionTestCase.loadReferenceFile("screen_id").returns(mockReferenceFile)
+    }
+    play {
+      assertTrue uiRegressionTestCase.loadScreenShotsAndCompare("screen_id")
     }
   }
 

@@ -18,6 +18,34 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     selenium.start();
   }
 
+  public void copyFile(File src, File dst) throws IOException {
+        InputStream input = new FileInputStream(src)
+        OutputStream out = new FileOutputStream(dst)
+
+        // Transfer bytes from in to out
+        byte[] buf = new byte[1024]
+        int len
+        while ((len = input.read(buf)) > 0) {
+            out.write(buf, 0, len)
+        }
+        input.close()
+        out.close()
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   public void navigateToAssertScreenShot(String screenShotName, Closure closure) {
     initialiseReportDirectory(screenShotName)
     closure.call()
@@ -32,10 +60,12 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     File result = loadResultFile(screenShotName)
     File reference = loadReferenceFile(screenShotName)
 
-    //println "Should regenerate " + System.getProperty("uiregression.regenerate")
-    // Add code here to put result as reference and return true
-
-    return compareResultToReference (result, reference)
+    if (System.getProperty("uiregression.regenerate")) {
+      copyFile(result, reference)
+      return true
+    } else {
+      return compareResultToReference (result, reference)
+    }
   }
 
   private void initialiseReportDirectory(String screenShotName) {

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="jozef-dransfields-macbook-pro.local" name="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" tests="11" time="1.61" timestamp="2009-11-23T18:15:46">
+  <properties />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual" time="0.84" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual" time="0.03" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testLoadScreenShotsAndCompareReturnsTrueIfImagesAreEqual" time="0.099" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testLoadScreenShotsAndCompareReturnsFalseIfImagesAreNotEqual" time="0.034" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty" time="0.135">
+    <failure message="Unexpected method call &apos;getPath()&apos; on &apos;Mock for File (1)&apos;
+  ordered:
+    &apos;loadResultFile(&quot;screen_id&quot;)&apos; on &apos;Mock for UIRegressionTestCase&apos;: expected 1, actual 1
+    &apos;loadReferenceFile(&quot;screen_id&quot;)&apos; on &apos;Mock for UIRegressionTestCase&apos;: expected 1, actual 1" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Unexpected method call &apos;getPath()&apos; on &apos;Mock for File (1)&apos;
+  ordered:
+    &apos;loadResultFile(&quot;screen_id&quot;)&apos; on &apos;Mock for UIRegressionTestCase&apos;: expected 1, actual 1
+    &apos;loadReferenceFile(&quot;screen_id&quot;)&apos; on &apos;Mock for UIRegressionTestCase&apos;: expected 1, actual 1
+	at org.gmock.internal.InternalMockController.fail(InternalMockController.groovy:202)
+	at org.gmock.internal.InternalMockController$fail.call(Unknown Source)
+	at org.gmock.internal.metaclass.MetaClassHelper.findExpectation(MetaClassHelper.groovy:25)
+	at org.gmock.internal.metaclass.MetaClassHelper$findExpectation.callStatic(Unknown Source)
+	at org.gmock.internal.metaclass.MetaClassHelper$findExpectation.callStatic(Unknown Source)
+	at org.gmock.internal.MockInternal.invokeMockMethod(MockInternal.groovy:81)
+	at org.gmock.internal.metaclass.MockProxyMetaClass$2.call(MockProxyMetaClass.java:49)
+	at org.gmock.internal.InternalMockController.doWork(InternalMockController.groovy:235)
+	at org.gmock.internal.InternalMockController.this$2$doWork(InternalMockController.groovy)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doInternal(InternalMockController.groovy:224)
+	at org.gmock.internal.InternalMockController$doInternal.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController$doInternal.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doInternal(InternalMockController.groovy:217)
+	at org.gmock.internal.metaclass.MockProxyMetaClass.invokeMethod(MockProxyMetaClass.java:43)
+	at org.gmock.internal.metaclass.MockProxyMetaClass.invokeMethod(MockProxyMetaClass.java:39)
+	at org.gmock.internal.JavaMethodInterceptor.intercept(JavaMethodInterceptor.java:56)
+	at $java.io.File$$EnhancerByCGLIB$$f9ed31b6.getPath(&lt;generated&gt;)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:97)
+	at net.jozefdransfield.uiregression.UIRegressionTestCase.copyFile(UIRegressionTestCase.groovy:22)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass$2$1.call(ConcreteMockProxyMetaClass.java:63)
+	at org.gmock.internal.InternalMockController.doWork(InternalMockController.groovy:235)
+	at org.gmock.internal.InternalMockController.this$2$doWork(InternalMockController.groovy)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doExternal(InternalMockController.groovy:228)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass$2.call(ConcreteMockProxyMetaClass.java:61)
+	at org.gmock.internal.InternalMockController.doWork(InternalMockController.groovy:235)
+	at org.gmock.internal.InternalMockController.this$2$doWork(InternalMockController.groovy)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doInternal(InternalMockController.groovy:224)
+	at org.gmock.internal.InternalMockController$doInternal.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doInternal(InternalMockController.groovy:217)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass.invokeMethod(ConcreteMockProxyMetaClass.java:50)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass.invokeMethod(ConcreteMockProxyMetaClass.java:46)
+	at net.jozefdransfield.uiregression.UIRegressionTestCase.loadScreenShotsAndCompare(UIRegressionTestCase.groovy:64)
+	at net.jozefdransfield.uiregression.UIRegressionTestCase.this$5$loadScreenShotsAndCompare(UIRegressionTestCase.groovy)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass$2$1.call(ConcreteMockProxyMetaClass.java:63)
+	at org.gmock.internal.InternalMockController.doWork(InternalMockController.groovy:235)
+	at org.gmock.internal.InternalMockController.this$2$doWork(InternalMockController.groovy)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doExternal(InternalMockController.groovy:228)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass$2.call(ConcreteMockProxyMetaClass.java:61)
+	at org.gmock.internal.InternalMockController.doWork(InternalMockController.groovy:235)
+	at org.gmock.internal.InternalMockController.this$2$doWork(InternalMockController.groovy)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController$this$2$doWork.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doInternal(InternalMockController.groovy:224)
+	at org.gmock.internal.InternalMockController$doInternal.callCurrent(Unknown Source)
+	at org.gmock.internal.InternalMockController.doInternal(InternalMockController.groovy:217)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass.invokeMethod(ConcreteMockProxyMetaClass.java:50)
+	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass.invokeMethod(ConcreteMockProxyMetaClass.java:46)
+	at net.jozefdransfield.uiregression.UIRegressionTestCaseTests$_testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty_closure10.doCall(UIRegressionTestCaseTests.groovy:98)
+	at net.jozefdransfield.uiregression.UIRegressionTestCaseTests$_testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty_closure10.doCall(UIRegressionTestCaseTests.groovy)
+	at org.gmock.internal.InternalMockController.play(InternalMockController.groovy:133)
+	at org.gmock.internal.InternalMockController$play.call(Unknown Source)
+	at org.gmock.internal.InternalMockController$play.call(Unknown Source)
+	at org.gmock.GMockController.play(GMockController.groovy:29)
+	at org.gmock.GMockController$play.call(Unknown Source)
+	at org.gmock.GMockController$play.call(Unknown Source)
+	at org.gmock.GMockTestCase.play(GMockTestCase.groovy:27)
+	at net.jozefdransfield.uiregression.UIRegressionTestCaseTests.testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty(UIRegressionTestCaseTests.groovy:97)
+	at _GrailsTest_groovy$_run_closure4.doCall(_GrailsTest_groovy:230)
+	at _GrailsTest_groovy$_run_closure4.call(_GrailsTest_groovy)
+	at _GrailsTest_groovy$_run_closure2.doCall(_GrailsTest_groovy:171)
+	at _GrailsTest_groovy$_run_closure1.doCall(_GrailsTest_groovy:118)
+	at TestApp$_run_closure1.doCall(TestApp.groovy:66)
+	at gant.Gant$_dispatch_closure4.doCall(Gant.groovy:324)
+	at gant.Gant$_dispatch_closure6.doCall(Gant.groovy:334)
+	at gant.Gant$_dispatch_closure6.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:344)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:334)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.processTargets(Gant.groovy:495)
+	at gant.Gant.processTargets(Gant.groovy:480)
+</failure>
+  </testcase>
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist" time="0.046" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testInitialiseReportDirectoryDoesNothingIfExists" time="0.022" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testloadReferenceFileReturnsReferenceFile" time="0.017" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testLoadResultFileReturnsResultFile" time="0.017" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testCompareResultToReferenceReturnsFalseIfImagesNotEqual" time="0.337" />
+  <testcase classname="net.jozefdransfield.uiregression.UIRegressionTestCaseTests" name="testCompareResultToReferenceReturnsTrueIfImagesEqual" time="0.029" />
+  <system-out><![CDATA[--Output from testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual--
+--Output from testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual--
+--Output from testLoadScreenShotsAndCompareReturnsTrueIfImagesAreEqual--
+--Output from testLoadScreenShotsAndCompareReturnsFalseIfImagesAreNotEqual--
+--Output from testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty--
+--Output from testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist--
+--Output from testInitialiseReportDirectoryDoesNothingIfExists--
+--Output from testloadReferenceFileReturnsReferenceFile--
+--Output from testLoadResultFileReturnsResultFile--
+--Output from testCompareResultToReferenceReturnsFalseIfImagesNotEqual--
+--Output from testCompareResultToReferenceReturnsTrueIfImagesEqual--
+]]></system-out>
+  <system-err><![CDATA[--Output from testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual--
+--Output from testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual--
+--Output from testLoadScreenShotsAndCompareReturnsTrueIfImagesAreEqual--
+--Output from testLoadScreenShotsAndCompareReturnsFalseIfImagesAreNotEqual--
+--Output from testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty--
+--Output from testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist--
+--Output from testInitialiseReportDirectoryDoesNothingIfExists--
+--Output from testloadReferenceFileReturnsReferenceFile--
+--Output from testLoadResultFileReturnsResultFile--
+--Output from testCompareResultToReferenceReturnsFalseIfImagesNotEqual--
+--Output from testCompareResultToReferenceReturnsTrueIfImagesEqual--
+]]></system-err>
+</testsuite>

@@ -11,8 +11,8 @@ class UIRegressionGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
+    def author = "Jozef Dransfield"
+    def authorEmail = "Jozef.Dransfield@me.com"
     def title = "Plugin summary/headline"
     def description = '''\\
 Brief description of the plugin.
