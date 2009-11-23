@@ -16,23 +16,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" afterPath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/stacktrace.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.iml" afterPath="$PROJECT_DIR$/UIRegression.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uiregressionGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/uiregressionGrailsPlugin.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UIRegression.launch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UIRegression-test.launch" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.iws" afterPath="$PROJECT_DIR$/UIRegression.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" afterPath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Events.groovy" afterPath="$PROJECT_DIR$/scripts/_Events.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UIRegression.tmproj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests-fails.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/0_UIRegressionTestCaseTests-fails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UIRegression.iws" afterPath="$PROJECT_DIR$/UIRegression.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.txt" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.xml" afterPath="$PROJECT_DIR$/target/test-reports/TEST-net.jozefdransfield.uiregression.UIRegressionTestCaseTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" afterPath="$PROJECT_DIR$/target/test-reports/html/alltests-fails.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/all-tests.html" afterPath="$PROJECT_DIR$/target/test-reports/html/all-tests.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/overview-summary.html" afterPath="$PROJECT_DIR$/target/test-reports/html/overview-summary.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/package-summary.html" afterPath="$PROJECT_DIR$/target/test-reports/html/net/jozefdransfield/uiregression/package-summary.html" />
@@ -99,7 +90,7 @@
       <file leaf-file-name="uiregressionGrailsPlugin.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uiregressionGrailsPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="241" selection-end="241" vertical-scroll-proportion="0.1509434">
+            <state line="17" column="30" selection-start="543" selection-end="543" vertical-scroll-proportion="0.3207547">
               <folding />
             </state>
           </provider>
@@ -500,6 +491,14 @@
       </option>
       <envs />
     </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+    </configuration>
     <configuration default="false" name="Grails:UIRegression" type="GrailsRunConfigurationType" factoryName="Grails Application">
       <module name="UIRegression" />
       <setting name="vmparams" value="" />
@@ -610,7 +609,7 @@
     <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored UIRegression to uiregression" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now dependant on selenium-rc" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -624,6 +623,7 @@
     <MESSAGE value="UIRegression test now actually compares images." />
     <MESSAGE value="Removed Selenium Clutter, UIRegressionTestCase now fully tests screenshot" />
     <MESSAGE value="Refactored UIRegression to uiregression" />
+    <MESSAGE value="Now dependant on selenium-rc" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -741,9 +741,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/SeleniumConfig.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="93" selection-start="796" selection-end="796" vertical-scroll-proportion="0.20754717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uiregressionGrailsPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="241" selection-end="241" vertical-scroll-proportion="0.1509434">
+        <state line="17" column="30" selection-start="543" selection-end="543" vertical-scroll-proportion="0.3207547">
           <folding />
         </state>
       </provider>
