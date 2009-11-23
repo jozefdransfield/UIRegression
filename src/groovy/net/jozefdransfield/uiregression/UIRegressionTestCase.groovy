@@ -8,43 +8,13 @@ import grails.util.BuildSettingsHolder
 
 public class UIRegressionTestCase extends SeleneseTestCase {
 
-  /* Not tested*/
-
   public void setUp(String rootUrl, String browserString) {
-    String seleniumServer = BuildSettingsHolder.getSettings().config.uiregression.selenium.server
+    String seleniumServer = BuildSettingsHolder.getSettings().config.uiregression.selenium.host
     int seleniumPort = BuildSettingsHolder.getSettings().config.uiregression.selenium.port
 
-    selenium = new DefaultSelenium(seleniumServer, seleniumPort, browserString, rootUrl);
-    selenium.start();
+    selenium = new DefaultSelenium(seleniumServer, seleniumPort, browserString, rootUrl)
+    selenium.start()
   }
-
-  public void copyFile(File src, File dst) throws IOException {
-        InputStream input = new FileInputStream(src)
-        OutputStream out = new FileOutputStream(dst)
-
-        // Transfer bytes from in to out
-        byte[] buf = new byte[1024]
-        int len
-        while ((len = input.read(buf)) > 0) {
-            out.write(buf, 0, len)
-        }
-        input.close()
-        out.close()
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   public void navigateToAssertScreenShot(String screenShotName, Closure closure) {
     initialiseReportDirectory(screenShotName)
@@ -61,10 +31,10 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     File reference = loadReferenceFile(screenShotName)
 
     if (System.getProperty("uiregression.regenerate")) {
-      copyFile(result, reference)
+      FileUtils.copyFile(result, reference)
       return true
     } else {
-      return compareResultToReference (result, reference)
+      return compareResultToReference(result, reference)
     }
   }
 
@@ -95,7 +65,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     return ImageUtils.compareImages(resultImage, referenceImage)
   }
 
-   private String referenceImagePath(String screenShotName) {
+  private String referenceImagePath(String screenShotName) {
     return rootReferenceReportDir(screenShotName) + "reference.png"
   }
 
@@ -107,7 +77,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     return BuildSettingsHolder.getSettings().config.uiregression.reference.path + "/${screenShotName}/"
   }
 
-   private String rootResultReportDir(screenShotName) {
+  private String rootResultReportDir(screenShotName) {
     return BuildSettingsHolder.getSettings().config.uiregression.result.path + "/${screenShotName}/"
   }
 

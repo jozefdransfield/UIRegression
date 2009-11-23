@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
 import grails.util.BuildSettings
 import grails.util.BuildSettingsHolder
+import com.thoughtworks.selenium.DefaultSelenium
 
 public class UIRegressionTestCaseTests extends GMockTestCase {
 
@@ -25,6 +26,16 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     buildSettings.config.uiregression.selenium.host = "localhost"
     buildSettings.config.uiregression.selenium.port = 4444
 
+  }
+
+  void testSetUpInitialisesSelenium() {
+    ordered {
+      def mockSelenium = mock(DefaultSelenium, constructor("localhost", 4444, "*browser", "rootURL"))
+      mockSelenium.start()
+    }
+    play {
+      uiRegressionTestCase.setUp("rootURL", "*browser")  
+    }
   }
 
   void testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual() {
@@ -93,6 +104,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     ordered {
       partialUIRegressionTestCase.loadResultFile("screen_id").returns(mockResultFile)
       partialUIRegressionTestCase.loadReferenceFile("screen_id").returns(mockReferenceFile)
+      mock(FileUtils).static.copyFile(mockResultFile, mockReferenceFile)
     }
     play {
       assertTrue uiRegressionTestCase.loadScreenShotsAndCompare("screen_id")
