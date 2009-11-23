@@ -1,23 +1,25 @@
+def seleniumManager
+
 eventAllTestsStart = {
   if (getBinding().variables.containsKey("functionalTests")) {
     functionalTests << "ui-regression-test"
   }
 }
 
-eventTestPhaseStart = { phase ->
+eventTestPhaseStart = {phase ->
   if (phase == 'functional') {
     event("StatusUpdate", ['Starting Selenium RC'])
-    Ant.java(jar:'selenium/selenium-server-1.0.2-SNAPSHOT-standalone.jar', fork:true, spawn: true)
+    def managerClass = Thread.currentThread().contextClassLoader.loadClass("grails.plugins.selenium.SeleniumManager")
+    seleniumManager = managerClass.instance
+    seleniumManager.loadConfig()
+
+    seleniumManager.startServer("${seleniumRcPluginDir}/lib/server/selenium-server.jar")
   }
 }
 
-eventTestPhaseEnd = { phase ->
+eventTestPhaseEnd = {phase ->
   if (phase == 'functional') {
     event("StatusUpdate", ['Stopping Selenium RC'])
-    URL url = new URL("http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer")
-    def result = url.openStream().text
-    if (result != "OKOK") {
-      event("StatusError", ['DANGER DANGER WILL ROBINSON, SELENIUM RC FAILED TO STOP']) 
-    }
+    seleniumManager.stopServer()
   }
 }

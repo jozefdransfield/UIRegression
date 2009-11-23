@@ -4,7 +4,12 @@ class uiregressionGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.1.1 > *"
     // the other plugins this plugin depends on
+
+
+    //def dependsOn = ["selenium-rc": "0.1.1 > *"]
     def dependsOn = [:]
+
+
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"

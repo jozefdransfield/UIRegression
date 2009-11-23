@@ -9,10 +9,13 @@ Brief description of the plugin.
   <resources>
     <resource>BuildConfig</resource>
     <resource>DataSource</resource>
+    <resource>SeleniumConfig</resource>
     <resource>UrlMappings</resource>
   </resources>
   <dependencies>
-    <resolvers />
+    <resolvers>
+      <resolver type='mavenCentral' />
+    </resolvers>
   </dependencies>
   <behavior />
 </plugin>

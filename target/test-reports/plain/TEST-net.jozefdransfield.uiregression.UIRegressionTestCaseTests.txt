@@ -1,5 +1,5 @@
 Testsuite: net.jozefdransfield.uiregression.UIRegressionTestCaseTests
-Tests run: 11, Failures: 1, Errors: 0, Time elapsed: 1.61 sec
+Tests run: 11, Failures: 1, Errors: 0, Time elapsed: 1.241 sec
 ------------- Standard Output ---------------
 --Output from testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual--
 --Output from testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual--
@@ -27,11 +27,11 @@ Tests run: 11, Failures: 1, Errors: 0, Time elapsed: 1.61 sec
 --Output from testCompareResultToReferenceReturnsTrueIfImagesEqual--
 ------------- ---------------- ---------------
 
-Testcase: testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual took 0.84 sec
-Testcase: testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual took 0.029 sec
-Testcase: testLoadScreenShotsAndCompareReturnsTrueIfImagesAreEqual took 0.099 sec
-Testcase: testLoadScreenShotsAndCompareReturnsFalseIfImagesAreNotEqual took 0.034 sec
-Testcase: testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty took 0.134 sec
+Testcase: testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual took 0.587 sec
+Testcase: testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual took 0.032 sec
+Testcase: testLoadScreenShotsAndCompareReturnsTrueIfImagesAreEqual took 0.113 sec
+Testcase: testLoadScreenShotsAndCompareReturnsFalseIfImagesAreNotEqual took 0.024 sec
+Testcase: testLoadScreenShotsAndCompareReplacesReferenceAndReturnsTrueWhenRegenerateProperty took 0.098 sec
 	FAILED
 Unexpected method call 'getPath()' on 'Mock for File (1)'
   ordered:
@@ -59,7 +59,7 @@ junit.framework.AssertionFailedError: Unexpected method call 'getPath()' on 'Moc
 	at org.gmock.internal.metaclass.MockProxyMetaClass.invokeMethod(MockProxyMetaClass.java:43)
 	at org.gmock.internal.metaclass.MockProxyMetaClass.invokeMethod(MockProxyMetaClass.java:39)
 	at org.gmock.internal.JavaMethodInterceptor.intercept(JavaMethodInterceptor.java:56)
-	at $java.io.File$$EnhancerByCGLIB$$f9ed31b6.getPath(<generated>)
+	at $java.io.File$$EnhancerByCGLIB$$8f91ae7d.getPath(<generated>)
 	at java.io.FileInputStream.<init>(FileInputStream.java:97)
 	at net.jozefdransfield.uiregression.UIRegressionTestCase.copyFile(UIRegressionTestCase.groovy:22)
 	at org.gmock.internal.metaclass.ConcreteMockProxyMetaClass$2$1.call(ConcreteMockProxyMetaClass.java:63)
@@ -120,9 +120,9 @@ junit.framework.AssertionFailedError: Unexpected method call 'getPath()' on 'Moc
 	at gant.Gant.processTargets(Gant.groovy:495)
 	at gant.Gant.processTargets(Gant.groovy:480)
 
-Testcase: testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist took 0.047 sec
+Testcase: testInitialiseReportDirectoryCreatesDirectoryWhenDoesNotExist took 0.043 sec
 Testcase: testInitialiseReportDirectoryDoesNothingIfExists took 0.022 sec
-Testcase: testloadReferenceFileReturnsReferenceFile took 0.017 sec
+Testcase: testloadReferenceFileReturnsReferenceFile took 0.018 sec
 Testcase: testLoadResultFileReturnsResultFile took 0.017 sec
-Testcase: testCompareResultToReferenceReturnsFalseIfImagesNotEqual took 0.337 sec
-Testcase: testCompareResultToReferenceReturnsTrueIfImagesEqual took 0.029 sec
+Testcase: testCompareResultToReferenceReturnsFalseIfImagesNotEqual took 0.249 sec
+Testcase: testCompareResultToReferenceReturnsTrueIfImagesEqual took 0.033 sec
