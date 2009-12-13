@@ -6,6 +6,8 @@ import java.awt.geom.Ellipse2D
 import java.awt.Color
 import java.awt.geom.Rectangle2D
 import org.gmock.GMockTestCase
+import java.awt.image.renderable.ParameterBlock
+import javax.media.jai.JAI
 
 public class ImageUtilsTests extends GMockTestCase {
 
@@ -39,6 +41,27 @@ public class ImageUtilsTests extends GMockTestCase {
 
   void testCompareImagesReturnsTrueWhenImagesEquals() {
     assertTrue ImageUtils.compareImages(ellipse, ellipse)
+  }
+
+  void testGenerateComparisonImageCallsJAIAndReturnsSubtractedImage() {
+    BufferedImage image1 = mock(BufferedImage)
+    BufferedImage image2 = mock(BufferedImage)
+    BufferedImage result = mock(BufferedImage)
+
+    ordered {
+      ParameterBlock mockPB = mock(ParameterBlock, constructor())
+      mockPB.addSource(image1)
+      mockPB.addSource(image2)
+
+      mock(JAI).static.create("subtract", mockPB).returns(result)
+    }
+
+    def retVal
+    play {
+      retVal = ImageUtils.generateComparisonImage(image1, image2)
+    }
+
+    assertEquals(result, retVal)
   }
 
 }

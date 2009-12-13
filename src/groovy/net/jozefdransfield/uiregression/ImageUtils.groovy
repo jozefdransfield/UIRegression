@@ -2,6 +2,8 @@ package net.jozefdransfield.uiregression
 
 import java.awt.image.BufferedImage
 import java.awt.image.PixelGrabber
+import java.awt.image.renderable.ParameterBlock
+import javax.media.jai.JAI
 
 public class ImageUtils {
   public static boolean compareImages(BufferedImage image1, BufferedImage image2) {
@@ -29,6 +31,14 @@ public class ImageUtils {
       throw e1
     }
     return false;
+  }
+
+  public static BufferedImage generateComparisonImage(BufferedImage image1, BufferedImage image2) {
+     ParameterBlock pb = new ParameterBlock()
+     pb.addSource(image1)
+     pb.addSource(image2)
+
+     return JAI.create("subtract", pb)
   }
 
 }
