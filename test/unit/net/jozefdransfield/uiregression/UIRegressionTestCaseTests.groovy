@@ -7,6 +7,7 @@ import javax.imageio.ImageIO
 import grails.util.BuildSettings
 import grails.util.BuildSettingsHolder
 import com.thoughtworks.selenium.DefaultSelenium
+import java.awt.image.RenderedImage
 
 public class UIRegressionTestCaseTests extends GMockTestCase {
 
@@ -46,7 +47,8 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       mockClosure.call()
       selenium.captureEntirePageScreenshot("/path/to/result/screen_id/result.png", "")
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(false)
-      partialUIRegressionTestCase.static.fail("Reference Image at [/path/to/result/screen_id/result.png] did not match [/path/to/reference/screen_id/reference.png] for ID: [screen_id]")
+      partialUIRegressionTestCase.static.fail("Result Image at [result:/path/to/result/screen_id/result.png]\n did not match [reference:/path/to/reference/screen_id/reference.png]\n for ID: [screen_id]\n [diff:/path/to/result/screen_id/diff.jpg]")
+                                              
     }
     play {
         uiRegressionTestCase.navigateToAssertScreenShot("screen_id", mockClosure)
@@ -75,7 +77,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     ordered {
       partialUIRegressionTestCase.loadResultFile("screen_id").returns(mockResultFile)
       partialUIRegressionTestCase.loadReferenceFile("screen_id").returns(mockReferenceFile)
-      partialUIRegressionTestCase.compareResultToReference(mockResultFile, mockReferenceFile).returns(true)
+      partialUIRegressionTestCase.compareResultToReference(mockResultFile, mockReferenceFile, "screen_id").returns(true)
     }
     play {
       assertTrue uiRegressionTestCase.loadScreenShotsAndCompare("screen_id")
@@ -89,7 +91,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     ordered {
       partialUIRegressionTestCase.loadResultFile("screen_id").returns(mockResultFile)
       partialUIRegressionTestCase.loadReferenceFile("screen_id").returns(mockReferenceFile)
-      partialUIRegressionTestCase.compareResultToReference(mockResultFile, mockReferenceFile).returns(false)
+      partialUIRegressionTestCase.compareResultToReference(mockResultFile, mockReferenceFile, "screen_id").returns(false)
     }
     play {
       assertFalse uiRegressionTestCase.loadScreenShotsAndCompare("screen_id")
@@ -159,20 +161,24 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     }
   }
 
-  void testCompareResultToReferenceReturnsFalseIfImagesNotEqual() {
+  void testCompareResultToReferenceReturnsFalseAndGeneratesComparisonImageIfImagesNotEqual() {
     File result
     File reference
     BufferedImage mockResultImage = mock(BufferedImage)
     BufferedImage mockReferenceImage = mock(BufferedImage)
+    RenderedImage mockComparisonImage = mock(RenderedImage)
     ImageIO mockImageIO = mock(ImageIO)
     ImageUtils mockImageUtils = mock(ImageUtils)
     ordered {
       mockImageIO.static.read(result).returns(mockResultImage)
       mockImageIO.static.read(reference).returns(mockReferenceImage)
       mockImageUtils.static.compareImages(mockResultImage, mockReferenceImage).returns(false)
+      mockImageUtils.static.generateComparisonImage(mockResultImage, mockReferenceImage).returns(mockComparisonImage)
+      def mockDiffFile = mock(File, constructor("/path/to/result/screen_id/diff.jpg"))
+      mockImageIO.static.write(mockComparisonImage, "jpeg", mockDiffFile)
     }
     play {
-      assertFalse uiRegressionTestCase.compareResultToReference(result, reference)
+      assertFalse uiRegressionTestCase.compareResultToReference(result, reference, "screen_id")
     }
   }
 
@@ -189,7 +195,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       mockImageUtils.static.compareImages(mockResultImage, mockReferenceImage).returns(true)
     }
     play {
-      assertTrue uiRegressionTestCase.compareResultToReference(result, reference)
+      assertTrue uiRegressionTestCase.compareResultToReference(result, reference, "screen_id")
     }
   }
 }

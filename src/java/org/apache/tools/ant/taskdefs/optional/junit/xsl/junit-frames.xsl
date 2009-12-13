@@ -852,7 +852,8 @@ h6 {
                         <a href="file://{$result}">Result</a>
                     </td>
                     <td>
-                        -
+                       <xsl:variable name="difference" select="substring-before(substring-after(@message,'[diff:'), ']')"/>
+                        <a href="file://{$difference}">difference</a>
                     </td>
                 </tr>
 

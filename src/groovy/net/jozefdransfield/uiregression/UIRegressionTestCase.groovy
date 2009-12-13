@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
 import com.thoughtworks.selenium.DefaultSelenium
 import grails.util.BuildSettingsHolder
+import java.awt.image.RenderedImage
 
 public class UIRegressionTestCase extends SeleneseTestCase {
 
@@ -22,7 +23,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     selenium.captureEntirePageScreenshot(resultImagePath(screenShotName), "")
 
     if (!loadScreenShotsAndCompare(screenShotName)) {
-      fail("Reference Image at [${resultImagePath(screenShotName)}] did not match [${referenceImagePath(screenShotName)}] for ID: [${screenShotName}]")
+      fail("Result Image at [result:${resultImagePath(screenShotName)}]\n did not match [reference:${referenceImagePath(screenShotName)}]\n for ID: [${screenShotName}]\n [diff:${diffImagePath(screenShotName)}]")
     }
   }
 
@@ -34,7 +35,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
       FileUtils.copyFile(result, reference)
       return true
     } else {
-      return compareResultToReference(result, reference)
+      return compareResultToReference(result, reference, screenShotName)
     }
   }
 
@@ -58,11 +59,17 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     return new File(resultImagePath(screenShotName))
   }
 
-  private Boolean compareResultToReference(File result, File reference) {
+  private Boolean compareResultToReference(File result, File reference, String screenShotName) {
     BufferedImage resultImage = ImageIO.read(result)
     BufferedImage referenceImage = ImageIO.read(reference)
 
-    return ImageUtils.compareImages(resultImage, referenceImage)
+    if (ImageUtils.compareImages(resultImage, referenceImage)) {
+      return true
+    } else {
+      RenderedImage diff = ImageUtils.generateComparisonImage(resultImage, referenceImage)
+      ImageIO.write(diff, "jpeg", new File(rootResultReportDir(screenShotName)+"diff.jpg"))
+      return false
+    }
   }
 
   private String referenceImagePath(String screenShotName) {
@@ -71,6 +78,10 @@ public class UIRegressionTestCase extends SeleneseTestCase {
 
   private String resultImagePath(String screenShotName) {
     return rootResultReportDir(screenShotName) + "result.png"
+  }
+
+  private String diffImagePath(String screenShotName) {
+    return rootResultReportDir(screenShotName) + "diff.jpg"
   }
 
   private String rootReferenceReportDir(screenShotName) {

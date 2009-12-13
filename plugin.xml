@@ -3,7 +3,8 @@
   <authorEmail>Jozef.Dransfield@me.com</authorEmail>
   <title>Plugin summary/headline</title>
   <description>\
-Brief description of the plugin.
+UIRegression plugin adds a new type of functional test, which uses selenium to navigate to a page and screenshot it.
+This screenshot is compared with a previous reference screenshot, to test for ui regressions.
 </description>
   <documentation>http://grails.org/UIRegression+Plugin</documentation>
   <resources>
