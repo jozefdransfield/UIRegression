@@ -6,6 +6,7 @@ import javax.imageio.ImageIO
 import com.thoughtworks.selenium.DefaultSelenium
 import grails.util.BuildSettingsHolder
 import java.awt.image.RenderedImage
+import org.apache.commons.codec.binary.Base64
 
 public class UIRegressionTestCase extends SeleneseTestCase {
 
@@ -20,7 +21,12 @@ public class UIRegressionTestCase extends SeleneseTestCase {
   public void navigateToAssertScreenShot(String screenShotName, Closure closure) {
     initialiseReportDirectory(screenShotName)
     closure.call()
-    selenium.captureEntirePageScreenshot(resultImagePath(screenShotName), "")
+    String screen = selenium.captureEntirePageScreenshotToString("")
+    byte[] imageBytes = Base64.decodeBase64(screen.getBytes("UTF-8"))
+    BufferedImage image = ImageIO.read(new ByteArrayInputStream(imageBytes))
+    ImageIO.write(image, "png", new File(resultImagePath(screenShotName)))
+
+
 
     if (!loadScreenShotsAndCompare(screenShotName)) {
       fail("Result Image at [result:${resultImagePath(screenShotName)}]\n did not match [reference:${referenceImagePath(screenShotName)}]\n for ID: [${screenShotName}]\n [diff:${diffImagePath(screenShotName)}]")
