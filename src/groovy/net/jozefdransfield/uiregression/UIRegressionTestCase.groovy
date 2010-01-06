@@ -67,13 +67,20 @@ public class UIRegressionTestCase extends SeleneseTestCase {
 
   private Boolean compareResultToReference(File result, File reference, String screenShotName) {
     BufferedImage resultImage = ImageIO.read(result)
-    BufferedImage referenceImage = ImageIO.read(reference)
+
+    BufferedImage referenceImage
+
+    try {
+      referenceImage = ImageIO.read(reference)
+    } catch (javax.imageio.IIOException e) {
+      fail("Reference Image does not exist, rerun with regenerate switch")
+    }
 
     if (ImageUtils.compareImages(resultImage, referenceImage)) {
       return true
     } else {
       RenderedImage diff = ImageUtils.generateComparisonImage(resultImage, referenceImage)
-      ImageIO.write(diff, "jpeg", new File(rootResultReportDir(screenShotName)+"diff.jpg"))
+      ImageIO.write(diff, "jpeg", new File(rootResultReportDir(screenShotName) + "diff.jpg"))
       return false
     }
   }
