@@ -845,15 +845,21 @@ h6 {
                 <tr>
                     <td>
                         <xsl:variable name="reference" select="substring-before(substring-after(@message,'[reference:'), ']')"/>
-                        <a href="file://{$reference}">Reference</a>
+                        <a href="file://{$reference}">
+                            <img src="file://{$reference}" style="width: 100px;"/>
+                        </a>
                     </td>
                     <td>
                         <xsl:variable name="result" select="substring-before(substring-after(@message,'[result:'), ']')"/>
-                        <a href="file://{$result}">Result</a>
+                        <a href="file://{$result}">
+                            <img src="file://{$result}" style="width: 100px;"/>
+                        </a>
                     </td>
                     <td>
                        <xsl:variable name="difference" select="substring-before(substring-after(@message,'[diff:'), ']')"/>
-                        <a href="file://{$difference}">difference</a>
+                        <a href="file://{$difference}">
+                            <img src="file://{$difference}" style="width: 100px;"/>
+                        </a>
                     </td>
                 </tr>
 

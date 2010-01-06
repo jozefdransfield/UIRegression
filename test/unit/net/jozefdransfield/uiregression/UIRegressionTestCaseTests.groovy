@@ -8,6 +8,7 @@ import grails.util.BuildSettings
 import grails.util.BuildSettingsHolder
 import com.thoughtworks.selenium.DefaultSelenium
 import java.awt.image.RenderedImage
+import org.apache.commons.codec.binary.Base64
 
 public class UIRegressionTestCaseTests extends GMockTestCase {
 
@@ -42,13 +43,20 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
   void testNavigateToAndAssertScreenShotFailsIfScreenShotsAreNotEqual() {
     def partialUIRegressionTestCase = mock(uiRegressionTestCase)
     def mockClosure = mock(Closure)
+    def mockImage = mock(BufferedImage)
+
     ordered {
       partialUIRegressionTestCase.initialiseReportDirectory("screen_id")
       mockClosure.call()
-      selenium.captureEntirePageScreenshot("/path/to/result/screen_id/result.png", "")
+      selenium.captureEntirePageScreenshotToString("").returns("picture")
+
+      mock(ImageIO).static.read(match { return true } ).returns(mockImage)
+      def mockImageFile = mock(File, constructor("/path/to/result/screen_id/result.png"))
+      mock(ImageIO).static.write(mockImage, "png", mockImageFile)
+
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(false)
-      //partialUIRegressionTestCase.static.fail("Result Image at [result:/path/to/result/screen_id/result.png]\n did not match [reference:/path/to/reference/screen_id/reference.png]\n for ID: [screen_id]\n [diff:/path/to/result/screen_id/diff.jpg]")
-                                              
+      partialUIRegressionTestCase.fail("Result Image at [result:/path/to/result/screen_id/result.png]\n did not match [reference:/path/to/reference/screen_id/reference.png]\n for ID: [screen_id]\n [diff:/path/to/result/screen_id/diff.jpg]")
+
     }
     play {
         uiRegressionTestCase.navigateToAssertScreenShot("screen_id", mockClosure)
@@ -59,10 +67,15 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
   void testNavigateToAndAssertScreenShotPassesIfScreenShotsAreEqual() {
     def partialUIRegressionTestCase = mock(uiRegressionTestCase)
     def mockClosure = mock(Closure)
+    def mockImage = mock(BufferedImage)
+      
     ordered {
       partialUIRegressionTestCase.initialiseReportDirectory("screen_id")
       mockClosure.call()
-      selenium.captureEntirePageScreenshot("/path/to/result/screen_id/result.png", "")
+      selenium.captureEntirePageScreenshotToString("").returns("picture")
+      mock(ImageIO).static.read(match { return true } ).returns(mockImage)
+      def mockImageFile = mock(File, constructor("/path/to/result/screen_id/result.png"))
+      mock(ImageIO).static.write(mockImage, "png", mockImageFile)
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(true)
     }
     play {
@@ -103,11 +116,10 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     def partialUIRegressionTestCase = mock(uiRegressionTestCase)
     def mockResultFile = mock(File)
     def mockReferenceFile = mock(File)
-    def mockFileUtils = mock(FileUtils)
     ordered {
-      //partialUIRegressionTestCase.loadResultFile("screen_id").returns(mockResultFile)
-      //partialUIRegressionTestCase.loadReferenceFile("screen_id").returns(mockReferenceFile)
-      mockFileUtils.static.copyFile(mockResultFile, mockReferenceFile)
+      partialUIRegressionTestCase.loadResultFile("screen_id").returns(mockResultFile)
+      partialUIRegressionTestCase.loadReferenceFile("screen_id").returns(mockReferenceFile)
+      mock(FileUtils).static.copyFile(mockResultFile, mockReferenceFile)
     }
     play {
       assertTrue uiRegressionTestCase.loadScreenShotsAndCompare("screen_id")

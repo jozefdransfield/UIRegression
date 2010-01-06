@@ -53,7 +53,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
 
     File resultReportDir = new File(rootResultReportDir(screenShotName))
     if (!resultReportDir.exists()) {
-      resultReportDir.mkdir()
+      resultReportDir.mkdirs()
     }
   }
 
