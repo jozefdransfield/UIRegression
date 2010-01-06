@@ -38,8 +38,6 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     File result = loadResultFile(screenShotName)
     File reference = loadReferenceFile(screenShotName)
 
-    println result
-
     if (System.getProperty("uiregression.regenerate")) {
       FileUtils.copyFile(result, reference)
       return true
