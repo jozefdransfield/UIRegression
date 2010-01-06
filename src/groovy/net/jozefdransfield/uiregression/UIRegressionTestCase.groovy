@@ -26,8 +26,6 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     BufferedImage image = ImageIO.read(new ByteArrayInputStream(imageBytes))
     ImageIO.write(image, "png", new File(resultImagePath(screenShotName)))
 
-
-
     if (!loadScreenShotsAndCompare(screenShotName)) {
       fail("Result Image at [result:${resultImagePath(screenShotName)}]\n did not match [reference:${referenceImagePath(screenShotName)}]\n for ID: [${screenShotName}]\n [diff:${diffImagePath(screenShotName)}]")
     }
@@ -36,6 +34,8 @@ public class UIRegressionTestCase extends SeleneseTestCase {
   private boolean loadScreenShotsAndCompare(String screenShotName) {
     File result = loadResultFile(screenShotName)
     File reference = loadReferenceFile(screenShotName)
+
+    println result
 
     if (System.getProperty("uiregression.regenerate")) {
       FileUtils.copyFile(result, reference)
