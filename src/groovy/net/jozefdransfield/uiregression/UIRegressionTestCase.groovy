@@ -18,7 +18,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     selenium.start()
   }
 
-  public void navigateToAssertScreenShot(String screenShotName, Closure closure) {
+  public void navigateToAndAssertScreenShot(String screenShotName, Closure closure) {
     initialiseReportDirectory(screenShotName)
     closure.call()
     String screen = selenium.captureEntirePageScreenshotToString("")
