@@ -27,7 +27,10 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     ImageIO.write(image, "png", new File(resultImagePath(screenShotName)))
 
     if (!loadScreenShotsAndCompare(screenShotName)) {
-      fail("Result Image at [result:${resultImagePath(screenShotName)}]\n did not match [reference:${referenceImagePath(screenShotName)}]\n for ID: [${screenShotName}]\n [diff:${diffImagePath(screenShotName)}]")
+      File resultImage = new File(resultImagePath(screenShotName))
+      File referenceImage = new File(referenceImagePath(screenShotName))
+      File diffImage = new File(diffImagePath(screenShotName))
+      fail("Result Image at [result:${resultImage.absolutePath}]\n did not match [reference:${referenceImage.absolutePath}]\n for ID: [${screenShotName}]\n [diff:${diffImage.absolutePath}]")
     }
   }
 
