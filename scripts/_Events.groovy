@@ -7,9 +7,9 @@ eventAllTestsStart = {
     functionalTests << "ui-regression"
   }
 }
-/*&& BuildSettingsHolder.getSettings().config.uiregression.localSelenium == true */
+/*&&  */
 eventTestSuiteStart = {String type ->
-	if (type == "ui-regression") {
+	if (type == "ui-regression" && BuildSettingsHolder.getSettings().config.uiregression.localSelenium == true) {
 		def managerClass = Thread.currentThread().contextClassLoader.loadClass("grails.plugins.selenium.SeleniumManager")
 		seleniumManager = managerClass.instance
 		seleniumManager.loadConfig()
@@ -20,7 +20,7 @@ eventTestSuiteStart = {String type ->
 }
 
 eventTestSuiteEnd = {String type, testSuite ->
-  if (type == "ui-regression") {
+  if (type == "ui-regression" && BuildSettingsHolder.getSettings().config.uiregression.localSelenium == true) {
 		event("StatusUpdate", ["stopping selenium server"])
 		seleniumManager.stopServer()
 	}
