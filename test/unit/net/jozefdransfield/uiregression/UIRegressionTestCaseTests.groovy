@@ -55,11 +55,20 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       mock(ImageIO).static.write(mockImage, "png", mockImageFile)
 
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(false)
-      partialUIRegressionTestCase.fail("Result Image at [result:/path/to/result/screen_id/result.png]\n did not match [reference:/path/to/reference/screen_id/reference.png]\n for ID: [screen_id]\n [diff:/path/to/result/screen_id/diff.jpg]")
+
+      def mockResultFile = mock(File, constructor("/path/to/result/screen_id/result.png"))
+      def mockReferenceFile = mock(File, constructor("/path/to/reference/screen_id/reference.png"))
+      def mockDiffFile = mock(File, constructor("/path/to/result/screen_id/diff.jpg"))
+
+      mockResultFile.absolutePath.returns("/path/to/result/screen_id/result.png")
+      mockReferenceFile.absolutePath.returns("/path/to/reference/screen_id/reference.png")
+      mockDiffFile.absolutePath.returns("/path/to/result/screen_id/diff.jpg")
+
+      partialUIRegressionTestCase.static.fail("Result Image at [result:/path/to/result/screen_id/result.png]\n did not match [reference:/path/to/reference/screen_id/reference.png]\n for ID: [screen_id]\n [diff:/path/to/result/screen_id/diff.jpg]")
 
     }
     play {
-        uiRegressionTestCase.navigateToAssertScreenShot("screen_id", mockClosure)
+        uiRegressionTestCase.navigateToAndAssertScreenShot("screen_id", mockClosure)
       
     }
   }
@@ -79,7 +88,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       partialUIRegressionTestCase.loadScreenShotsAndCompare("screen_id").returns(true)
     }
     play {
-      uiRegressionTestCase.navigateToAssertScreenShot("screen_id", mockClosure)
+      uiRegressionTestCase.navigateToAndAssertScreenShot("screen_id", mockClosure)
     }
   }
 
@@ -134,7 +143,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       
       def mockResultDirectory = mock(File, constructor("/path/to/result/filename/"))
       mockResultDirectory.exists().returns(false)
-      mockResultDirectory.mkdir()
+      mockResultDirectory.mkdirs()
     }
     play {
       uiRegressionTestCase.initialiseReportDirectory("filename")
