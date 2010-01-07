@@ -238,4 +238,17 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
       assertTrue uiRegressionTestCase.compareResultToReference(result, reference, "screen_id")
     }
   }
+
+  void testTearDownStopsSelenium() {
+    def mockSelenium = mock(DefaultSelenium)
+
+    uiRegressionTestCase.selenium = mockSelenium
+
+    ordered {
+      mockSelenium.stop()
+    }
+    play {
+      uiRegressionTestCase.tearDown()    
+    }
+  }
 }
