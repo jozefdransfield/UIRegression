@@ -9,6 +9,7 @@ import grails.util.BuildSettingsHolder
 import com.thoughtworks.selenium.DefaultSelenium
 import java.awt.image.RenderedImage
 import org.apache.commons.codec.binary.Base64
+import javax.imageio.IIOException
 
 public class UIRegressionTestCaseTests extends GMockTestCase {
 
@@ -180,6 +181,23 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     }
     play {
       assertEquals mockFile, uiRegressionTestCase.loadResultFile("screen_id")
+    }
+  }
+
+  void testCompareResultToReferenceFailsIfReferenceImageNotPresent() {
+    File result
+    File reference
+
+    def mockResultImage = mock(BufferedImage)
+
+    ordered {
+      mock(ImageIO).static.read(result).returns(mockResultImage)
+      mock(ImageIO).static.read(reference).raises(new IIOException("I broke"))
+      mock(uiRegressionTestCase).static.fail("Reference Image does not exist, rerun with regenerate switch")
+    }
+
+    play {
+       assertFalse uiRegressionTestCase.compareResultToReference(result, reference, "screen_id")
     }
   }
 

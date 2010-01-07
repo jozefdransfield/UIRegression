@@ -75,6 +75,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
       referenceImage = ImageIO.read(reference)
     } catch (javax.imageio.IIOException e) {
       fail("Reference Image does not exist, rerun with regenerate switch")
+      return false
     }
 
     if (ImageUtils.compareImages(resultImage, referenceImage)) {
