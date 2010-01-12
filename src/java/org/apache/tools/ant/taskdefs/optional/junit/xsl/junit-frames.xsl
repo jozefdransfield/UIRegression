@@ -326,6 +326,30 @@ h6 {
           doc.close();
           win.focus();
         }
+        var displayImageComparisons = function(sourceImageURL, referenceImageURL, sourceImageTitle, referenceImageTitle) {
+            var imageComparison = window.open('','ImageComparison','scrollbars=1,resizable=1');
+            imageComparison = imageComparison.document;
+            imageComparison.open();
+            imageComparison.write('<html>'                                                                                       +
+                                     '<head>'                                                                                    +
+                                        '<title>Images For Comparison</title>'                                                   +
+                                     '</head>'                                                                                   +
+                                     '<body>'                                                                                    +
+                                        '<div>'                                                                                  +
+                                            '<a id="sourceLink" href="#reference" name="source" onclick="document.getElementById(\'sourceLink\').style[\'display\'] = \'none\';document.getElementById(\'referenceLink\').removeAttribute(\'style\');return false;">' +
+                                                '<img src="' + sourceImageURL + '" />'                                           +
+                                                '<span>Source Image</span>'                                                      +
+                                            '</a>'                                                                               +
+                                            '<a id="referenceLink" href="#source" name="reference" style="display:none;" onclick="document.getElementById(\'referenceLink\').style[\'display\'] = \'none\';document.getElementById(\'sourceLink\').removeAttribute(\'style\');return false;">' +
+                                                '<img src="' + referenceImageURL + '" />'                                        +
+                                                '<span>Reference Image</span>'                                                   +
+                                            '</a>'                                                                               +
+                                        '</div>'                                                                                 +
+                                     '</body>'                                                                                   +
+                                  '</html>');
+            imageComparison.close();
+            imageComparison.focus();
+        }
       ]]>
       </script>
         </head>
@@ -834,36 +858,34 @@ h6 {
         <xsl:when test="not(@message)">N/A</xsl:when>
         <xsl:otherwise>
             <xsl:if test="$showImageTable">
+                <xsl:variable name="reference" select="substring-before(substring-after(@message,'[reference:'), ']')"/>
+                <xsl:variable name="result" select="substring-before(substring-after(@message,'[result:'), ']')"/>
+                <xsl:variable name="difference" select="substring-before(substring-after(@message,'[diff:'), ']')"/>
+                <table>
+                    <tr>
+                        <th>Reference</th>
+                        <th>Result</th>
+                        <th>Difference</th>
+                    </tr>
 
-            <table>
-                <tr>
-                    <th>Reference</th>
-                    <th>Result</th>
-                    <th>Difference</th>
-                </tr>
-
-                <tr>
-                    <td>
-                        <xsl:variable name="reference" select="substring-before(substring-after(@message,'[reference:'), ']')"/>
-                        <a href="file://{$reference}">
-                            <img src="file://{$reference}" style="width: 100px;"/>
-                        </a>
-                    </td>
-                    <td>
-                        <xsl:variable name="result" select="substring-before(substring-after(@message,'[result:'), ']')"/>
-                        <a href="file://{$result}">
-                            <img src="file://{$result}" style="width: 100px;"/>
-                        </a>
-                    </td>
-                    <td>
-                       <xsl:variable name="difference" select="substring-before(substring-after(@message,'[diff:'), ']')"/>
-                        <a href="file://{$difference}">
-                            <img src="file://{$difference}" style="width: 100px;"/>
-                        </a>
-                    </td>
-                </tr>
-
-            </table>
+                    <tr>
+                        <td>
+                            <a href="#file://{$reference}" onclick="javascript:displayImageComparisons('file://{$reference}', 'file://{$result}', 'Reference image', 'Result image');return false;">
+                                <img src="file://{$reference}" style="width: 100px;"/>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#file://{$result}" onclick="javascript:displayImageComparisons('file://{$result}', 'file://{$reference}', 'Result image', 'Reference image');return false;">
+                                <img src="file://{$result}" style="width: 100px;"/>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#file://{$difference}">
+                                <img src="file://{$difference}" style="width: 100px;"/>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </xsl:if>
         </xsl:otherwise>
     </xsl:choose>
