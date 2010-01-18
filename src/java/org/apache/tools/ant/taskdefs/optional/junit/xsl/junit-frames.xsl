@@ -326,30 +326,6 @@ h6 {
           doc.close();
           win.focus();
         }
-        var displayImageComparisons = function(sourceImageURL, referenceImageURL, sourceImageTitle, referenceImageTitle) {
-            var imageComparison = window.open('','ImageComparison','scrollbars=1,resizable=1');
-            imageComparison = imageComparison.document;
-            imageComparison.open();
-            imageComparison.write('<html>'                                                                                       +
-                                     '<head>'                                                                                    +
-                                        '<title>Images For Comparison</title>'                                                   +
-                                     '</head>'                                                                                   +
-                                     '<body>'                                                                                    +
-                                        '<div>'                                                                                  +
-                                            '<a id="sourceLink" href="#reference" name="source" onclick="document.getElementById(\'sourceLink\').style[\'display\'] = \'none\';document.getElementById(\'referenceLink\').removeAttribute(\'style\');return false;">' +
-                                                '<img src="' + sourceImageURL + '" />'                                           +
-                                                '<span>Source Image</span>'                                                      +
-                                            '</a>'                                                                               +
-                                            '<a id="referenceLink" href="#source" name="reference" style="display:none;" onclick="document.getElementById(\'referenceLink\').style[\'display\'] = \'none\';document.getElementById(\'sourceLink\').removeAttribute(\'style\');return false;">' +
-                                                '<img src="' + referenceImageURL + '" />'                                        +
-                                                '<span>Reference Image</span>'                                                   +
-                                            '</a>'                                                                               +
-                                        '</div>'                                                                                 +
-                                     '</body>'                                                                                   +
-                                  '</html>');
-            imageComparison.close();
-            imageComparison.focus();
-        }
       ]]>
       </script>
         </head>
@@ -854,6 +830,33 @@ h6 {
 <!-- Style for the error and failure in the testcase template -->
 <xsl:template name="display-failures">
     <xsl:variable name="showImageTable" select="contains(@message, '[reference:') and contains(@message, '[result:')"/>
+    <script><![CDATA[
+        var displayImageComparisons = function(sourceImageURL, referenceImageURL, sourceImageTitle, referenceImageTitle) {
+            var imageComparison = window.open('','ImageComparison','scrollbars=1,resizable=1');
+            imageComparison = imageComparison.document;
+            imageComparison.open();
+            imageComparison.write('<html>'                                                                                       +
+                                     '<head>'                                                                                    +
+                                        '<title>Images For Comparison</title>'                                                   +
+                                     '</head>'                                                                                   +
+                                     '<body>'                                                                                    +
+                                        '<div>'                                                                                  +
+                                            '<a id="sourceLink" href="#reference" name="source" onclick="document.getElementById(\'sourceLink\').style[\'display\'] = \'none\';document.getElementById(\'referenceLink\').style[\'display\'] = \'inline\';return false;">' +
+                                                '<img src="' + sourceImageURL + '" />'                                           +
+                                                '<span>Source Image</span>'                                                      +
+                                            '</a>'                                                                               +
+                                            '<a id="referenceLink" href="#source" name="reference" style="display:none;" onclick="document.getElementById(\'referenceLink\').style[\'display\'] = \'none\';document.getElementById(\'sourceLink\').style[\'display\'] = \'inline\';return false;">' +
+                                                '<img src="' + referenceImageURL + '" />'                                        +
+                                                '<span>Reference Image</span>'                                                   +
+                                            '</a>'                                                                               +
+                                        '</div>'                                                                                 +
+                                     '</body>'                                                                                   +
+                                  '</html>');
+            imageComparison.close();
+            imageComparison.focus();
+            return false;
+        }
+    ]]></script>
     <xsl:choose>
         <xsl:when test="not(@message)">N/A</xsl:when>
         <xsl:otherwise>
@@ -870,17 +873,17 @@ h6 {
 
                     <tr>
                         <td>
-                            <a href="#file://{$reference}" onclick="javascript:displayImageComparisons('file://{$reference}', 'file://{$result}', 'Reference image', 'Result image');return false;">
+                            <a href="#" onclick="javascript:displayImageComparisons('file://{$reference}', 'file://{$result}', 'Reference image', 'Result image');return false;">
                                 <img src="file://{$reference}" style="width: 100px;"/>
                             </a>
                         </td>
                         <td>
-                            <a href="#file://{$result}" onclick="javascript:displayImageComparisons('file://{$result}', 'file://{$reference}', 'Result image', 'Reference image');return false;">
+                            <a href="#" onclick="javascript:displayImageComparisons('file://{$result}', 'file://{$reference}', 'Result image', 'Reference image');return false;">
                                 <img src="file://{$result}" style="width: 100px;"/>
                             </a>
                         </td>
                         <td>
-                            <a href="#file://{$difference}">
+                            <a href="file://{$difference}">
                                 <img src="file://{$difference}" style="width: 100px;"/>
                             </a>
                         </td>
