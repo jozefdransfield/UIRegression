@@ -10,6 +10,7 @@ import com.thoughtworks.selenium.DefaultSelenium
 import java.awt.image.RenderedImage
 import org.apache.commons.codec.binary.Base64
 import javax.imageio.IIOException
+import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
 public class UIRegressionTestCaseTests extends GMockTestCase {
 
@@ -17,27 +18,24 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
   Selenium selenium
 
   void setUp() {
+    ConfigurationHolder.config = new ConfigObject()
+    ConfigurationHolder.config.uiregression.reference.path = '/path/to/reference'
+    ConfigurationHolder.config.uiregression.result.path = '/path/to/result'
+    ConfigurationHolder.config.uiregression.selenium.host = 'localhost'
+    ConfigurationHolder.config.uiregression.selenium.port = 4444
+
     uiRegressionTestCase = new UIRegressionTestCase()
     selenium = mock(Selenium)
     uiRegressionTestCase.selenium = selenium
-
-    def buildSettings = new BuildSettings()
-    BuildSettingsHolder.settings = buildSettings
-
-    buildSettings.config.uiregression.reference.path = "/path/to/reference"
-    buildSettings.config.uiregression.result.path = "/path/to/result"
-    buildSettings.config.uiregression.selenium.host = "localhost"
-    buildSettings.config.uiregression.selenium.port = 4444
-
   }
 
   void testSetUpInitialisesSelenium() {
     ordered {
-      def mockSelenium = mock(DefaultSelenium, constructor("localhost", 4444, "*browser", "rootURL"))
+      def mockSelenium = mock(DefaultSelenium, constructor("localhost", 4444, "*firefox", "http://localhost:8080"))
       mockSelenium.start()
     }
     play {
-      uiRegressionTestCase.setUp("rootURL", "*browser")  
+      uiRegressionTestCase.setUp()  
     }
   }
 
@@ -140,7 +138,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     ordered {
       def mockReferenceDirectory = mock(File, constructor("/path/to/reference/filename/"))
       mockReferenceDirectory.exists().returns(false)
-      mockReferenceDirectory.mkdir()
+      mockReferenceDirectory.mkdirs()
       
       def mockResultDirectory = mock(File, constructor("/path/to/result/filename/"))
       mockResultDirectory.exists().returns(false)
@@ -245,6 +243,7 @@ public class UIRegressionTestCaseTests extends GMockTestCase {
     uiRegressionTestCase.selenium = mockSelenium
 
     ordered {
+      mockSelenium.close()      
       mockSelenium.stop()
     }
     play {

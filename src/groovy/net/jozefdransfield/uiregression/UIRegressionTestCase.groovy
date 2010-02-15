@@ -1,27 +1,40 @@
 package net.jozefdransfield.uiregression
 
+import static org.codehaus.groovy.grails.commons.ConfigurationHolder.config
 import com.thoughtworks.selenium.SeleneseTestCase
 import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
 import com.thoughtworks.selenium.DefaultSelenium
-import grails.util.BuildSettingsHolder
 import java.awt.image.RenderedImage
 import org.apache.commons.codec.binary.Base64
 
 public class UIRegressionTestCase extends SeleneseTestCase {
 
-  public void setUp(String rootUrl, String browserString) {
-    String seleniumServer = BuildSettingsHolder.getSettings().config.uiregression.selenium.host
-    int seleniumPort = BuildSettingsHolder.getSettings().config.uiregression.selenium.port
+  private final String browserString = config.uiregression.browserstring ?: '*firefox'
+  private final String referencePath = config.uiregression.reference.path ?: 'test/ui-regression/reference/'
+  private final String resultPath = config.uiregression.result.path ?: 'test/reports/ui-regression/'
 
-    selenium = new DefaultSelenium(seleniumServer, seleniumPort, browserString, rootUrl)
+  public void setUp() {
+    String seleniumServer = config.uiregression.selenium.host ?: 'localhost'
+    int seleniumPort = config.uiregression.selenium.port ?: 4444
+    String protocol = config.uiregression.protocol ?: 'http'
+    String hostname = config.uiregression.hostname ?: 'localhost'
+    String port = config.uiregression.port ?: 8080
+
+    String webServerHost = "$protocol://$hostname:$port"
+    selenium = new DefaultSelenium(seleniumServer, seleniumPort, browserString, webServerHost)
     selenium.start()
   }
 
   public void navigateToAndAssertScreenShot(String screenShotName, Closure closure) {
     initialiseReportDirectory(screenShotName)
     closure.call()
-    String screen = selenium.captureEntirePageScreenshotToString("")
+    String screen
+    if (browserString.contains("firefox")) {
+      screen = selenium.captureEntirePageScreenshotToString("")
+    } else {
+      screen = selenium.captureScreenshotToString()
+    }
     byte[] imageBytes = Base64.decodeBase64(screen.getBytes("UTF-8"))
     BufferedImage image = ImageIO.read(new ByteArrayInputStream(imageBytes))
     ImageIO.write(image, "png", new File(resultImagePath(screenShotName)))
@@ -49,7 +62,7 @@ public class UIRegressionTestCase extends SeleneseTestCase {
   private void initialiseReportDirectory(String screenShotName) {
     File referenceReportDir = new File(rootReferenceReportDir(screenShotName))
     if (!referenceReportDir.exists()) {
-      referenceReportDir.mkdir()
+      referenceReportDir.mkdirs()
     }
 
     File resultReportDir = new File(rootResultReportDir(screenShotName))
@@ -100,14 +113,16 @@ public class UIRegressionTestCase extends SeleneseTestCase {
   }
 
   private String rootReferenceReportDir(screenShotName) {
-    return BuildSettingsHolder.getSettings().config.uiregression.reference.path + "/${screenShotName}/"
+
+      return referencePath + "/${screenShotName}/"
   }
 
   private String rootResultReportDir(screenShotName) {
-    return BuildSettingsHolder.getSettings().config.uiregression.result.path + "/${screenShotName}/"
+    return resultPath + "/${screenShotName}/"
   }
 
   public void tearDown() {
+    selenium.close()
     selenium.stop()
   }
 
